@@ -1,0 +1,23 @@
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner (System.in);
+        int x=30,y=35,i=1;
+        int n=sc.nextInt();
+        if(n==1)
+          System.out.print(+x);
+        else if(n==2)
+          System.out.print(+x+" "+y);
+        else
+        System.out.print(+x+" "+y+" ");
+        for(i=1;i<n/2;i++)
+        {
+            x+=(8*i);
+            y+=(6*i);
+            System.out.print(+x+" "+y+" ");
+        }
+        if(n%2!=0)
+          System.out.print(+(x+=(8*i)));
+    }
+}
